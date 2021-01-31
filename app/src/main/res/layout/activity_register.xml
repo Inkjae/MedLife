@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Register">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@drawable/ic_baseline_emoji_emotions_24"/>
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome "
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please enter your profile"
+            android:textSize="16dp"
+ />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:text="Emergency Call" />
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="25dp"
+        android:background="@drawable/circle">
+    <EditText
+        android:id="@+id/EmergencyCall"
+        android:layout_width="178dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:layout_marginLeft="12dp"
+        android:layout_below="@id/call"
+        android:layout_marginBottom="15dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/blood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/EmergencyCall"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:text="Blood Type" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="25dp"
+        android:background="@drawable/circle">
+    <Spinner
+        android:id="@+id/bloodType"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/blood"
+         />
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:text="โรคประจำตัว" />
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:background="@drawable/circle">
+        <TextView
+            android:id="@+id/diseaseView"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="11dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+        <Button
+            android:id="@+id/selectDisease"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/circle"
+            android:text="+"
+            />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+        <Button
+            android:id="@+id/deletedis"
+            android:layout_width="20dp"
+            android:layout_marginRight="8dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/circlewhite"
+            android:text="x" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:text="สิ่งที่แพ้" />
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:background="@drawable/circle">
+        <TextView
+            android:id="@+id/allergyView"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="11dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <Button
+            android:id="@+id/selectAllergy"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/circle"
+            android:text="+"
+            />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+        <Button
+            android:id="@+id/deleteall"
+            android:layout_width="20dp"
+            android:layout_marginRight="8dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/circlewhite"
+            android:text="x" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+        <Button
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/close_button"/>
+        <Button
+            android:id="@+id/nextpage"
+            android:layout_marginLeft="6dp"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/circle"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/regnext"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="CONTINUE"
+        android:textColor="@color/white"
+        android:background="@drawable/gradient"/>
+
+
+
+</LinearLayout>

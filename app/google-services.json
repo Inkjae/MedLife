@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "446984037084",
+    "firebase_url": "https://medlife-1603992688155.firebaseio.com",
+    "project_id": "medlife-1603992688155",
+    "storage_bucket": "medlife-1603992688155.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:446984037084:android:fef94d2463c37e4f358a19",
+        "android_client_info": {
+          "package_name": "com.example.medlife_final"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "446984037084-injgmt25uqj91p1p5j5p2s727t2979ag.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBH4fwMTwjQ5LCd4fR3yP7KBIU-JwPbTAg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "446984037084-injgmt25uqj91p1p5j5p2s727t2979ag.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
